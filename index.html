@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de unidades</h1>
+        <form id="converter-form">
+            <div class="form-group">
+                <label for="value">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+            <div class="form-group">
+                <label for="unit">Que unidad es:</label>
+                <select id="unit" name="unit" required>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="ex">ex</option>
+                    <option value="%">%</option>
+                    <option value="rem">rem</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="convert">en </label>
+                <select id="convert" name="convert" required>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                </select>
+            </div>
+            <input type="submit" value="Convertir">
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
